@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Área de trabalho-->
+    <div class="desktop">
+        <div class="icon" onclick="openWindow('projects')">
+            <img src="./img/windows-98-icon-pack-69.png" alt="Projetos">
+            <p class="projetos">Projetos</p>
+        </div>
+        <div class="icon" onclick="openWindow('social')">
+            <img src="./img/tumblr_78e5e1fb87d13924b0a4b410d131b930_1afa8a31_540.png" alt="Redes Sociais">
+            <p class="social">Redes Sociais</p>
+        </div>
+        <div class="icon" onclick="openWindow('about')">
+            <img src="./img/png-clipart-gray-computer-windows-95-computer-icons-windows-3-1x-laptop-cpu-electronics-rectangle-thumbnail-removebg-preview.png" alt="Sobre Mim">
+            <p class="about">Sobre Mim</p>
+        </div>
+        <div class="icon" onclick="openWindow('music')">
+            <img src="./img/519993-middle-removebg-preview.png" alt="music">
+            <p class="music">Player</p>
+        </div>
+    </div>
+    <!--Janelas-->
+    <!--Janela sobre mim-->
+    <div id="window-about" class="window">
+        <div class="title-bar">
+            <img src="./img/png-clipart-gray-computer-windows-95-computer-icons-windows-3-1x-laptop-cpu-electronics-rectangle-thumbnail-removebg-preview.png" alt="Sobre Mim" class="sobre-mim">
+            <span class="about-me">Sobre mim</span>
+            <button class="close" onclick="closeWindow('about')">X</button>
+        </div>
+    <div class="content">
+        <h2 class="eu">Quem sou eu?</h2>
+        <h3>Desenvolvedora FullStack Jr</h3>
+    
+        <p>Sou uma pessoa responsável e dedicada, em busca da minha primeira oportunidade no mercado de trabalho.</p>
+    
+        <p>Tenho me especializado em desenvolvimento web e mobile, adquirindo conhecimentos em:</p>
+        <ul>
+         <li>Front-end: HTML, CSS, JavaScript</li>
+          <li>Back-end: Python (Django) e Node.js</li>
+        </ul>
+    
+        <p>Além disso, estou aprendendo sobre desenvolvimento mobile utilizando o Ionic Framework e desenvolvendo habilidades em UX/UI Design, focando na criação de interfaces intuitivas e funcionais.</p>
+    
+        <p>Estou familiarizado com conceitos de:</p>
+         <ul>
+            <li>API RESTful</li>
+            <li>Bancos de dados</li>
+            <li>Versionamento de código com Git</li>
+         </ul>
+    
+        <p>Meu objetivo é aprender a desenvolver soluções eficientes e escaláveis, sempre alinhadas às necessidades dos usuários. Estou em constante atualização para oferecer serviços de qualidade e inovação.</p>
+    </div>
+
+    </div>
+    <div id="window-social" class="window">
+        <div class="title-bar">
+            <img src="./img/tumblr_78e5e1fb87d13924b0a4b410d131b930_1afa8a31_540.png" alt="Redes Sociais" class="sociais">
+            <span class="redes-sociais">Redes Sociais</span>
+            <button class="close" onclick="closeWindow('social')">X</button>
+        </div>
+        <div class="content">
+                <img src="./img/25231.png" alt="github" class="github">
+                <p class="link"><a href="https://github.com/fantasy111-de">Github</a></p>
+                <img src="./img/174857.png" alt="linkedin" class="linkedin">
+                <p class="link"><a href="https://www.linkedin.com/in/viviane-cunico/">Linkedin</a></p>
+                <img src="./img/1384063.png" alt="instagram" class="instagram">
+                <p class="link"><a href="https://instagram.com/agittpunkt_">Instagram</a></p>
+      
+        </div>
+    </div>
+    <div id="window-projects" class="window">
+        <div class="title-bar">
+            <img src="./img/windows-98-icon-pack-69.png" alt="Projetos" class="winprojects">
+            <span class="title">Projetos</span>
+            <button class="close" onclick="closeWindow('projects')">X</button>
+        </div>
+        <div class="content">
+            <h3>Linguagem C</h3>
+            <ul>
+                <li><a href="https://github.com/fantasy111-de/Postura-e-Bem-Estar">Postura e Bem-Estar</a></li>
+                <li><a href="https://github.com/fantasy111-de/button-led-rgb">Botão LED RGB</a></li>
+            </ul>
+            <h3>Análise de Dados</h3>
+            <ul>
+                <li><a href="https://colab.research.google.com/drive/1PQ8Xp0K6TvOsMFkwlyBaPiKTGbuYQfSK#scrollTo=JaBr_LIxTqQE">Análise de Dados de Eleições</a></li>
+            </ul>
+            <h3>Desenvolvimento Web</h3>
+            <ul>
+                <li><a href="https://fantasy111-de.github.io/CestaCheia/">CestaCheia</a></li>
+                <li><a href="https://fantasy111-de.github.io/web-formulario/">CestaCheia</a></li>
+                <li><a href="https://fantasy111-de.github.io/web-atividade01/">Web Todo</a></li>
+                <li><a href="https://fantasy111-de.github.io/web-contador-de-cliques/">Web Todo 2</a></li>
+            </ul>
+            <h3>Protótipos</h3>
+            <ul>
+                <li><a href="https://www.figma.com/proto/8UYr3FYXQrd8OxGstC8Igd/SIGAA?node-id=469-280&p=f&m=draw&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Protótipo 1</a></li>
+                <li><a href="https://www.figma.com/proto/CUjrS6Mq2XAM2tfMo3k9XM/StudySphere?node-id=65-6">Protótipo 2</a></li>
+                <li><a href="https://www.figma.com/proto/ND53lPknpv9PR3tS3LmjMP/CestaCheia?node-id=294-368&p=f&m=draw&scaling=scale-down&content-scaling=fixed&page-id=0%3A1">Protótipo 3</a></li>
+            </ul>
+            <h3>APIs</h3>
+            <ul>
+                <li><a href="https://fantasy111-de.github.io/webII-API/">API de Produtos (front)</a></li>"
+                <li><a href="https://github.com/fantasy111-de/webII-API">Repositório</a></li>
+                <li><a href="https://github.com/fantasy111-de/eng.software">API de Produtos 2</a></li>
+                <li><a href="https://github.com/fantasy111-de/api-django">API de Produtos 3</a></li>
+            </ul>
+            <h3>Python</h3>
+            <ul>
+                <li><a href="https://github.com/fantasy111-de/ia-analise-de-dados">Análise de Dados com IA</a></li>
+                <li><a href="https://github.com/fantasy111-de/ia-buscasequencial">Busca Sequencial com IA</a></li>
+                <li><a href="https://github.com/fantasy111-de/ia-caixeiro-viajante">Caixeiro Viajante com IA</a></li>
+                <li><a href="https://github.com/fantasy111-de/ia-kruskal">Kruskal com IA</a></li>
+                <li><a href="https://github.com/fantasy111-de/ia-prim">Dijkstra com IA</a></li>
+        </div>
+    </div>
+    <div id="window-music" class="window">
+        <div class="title-bar">
+            <img src="./img/519993-middle-removebg-preview.png" alt="music" class="winmusic">
+            <span class="title">Music Player</span>
+            <button class="close" onclick="closeWindow('music')">X</button>
+        </div>
+        <div class="content">
+            <h3 class="song-title">Esperanza</h3>
+            <p class="song-artist">Hermanos Gutierrez</p>
+        </div>
+        <div class="controls">
+            <button class="button" onclick="prevTrack()">⏮</button>
+            <button class="button" onclick="togglePlayPause()">▶</button>
+            <button class="button" onclick="nextTrack()">⏭</button>
+        </div>
+        <div class="player-source">Player: Windows 95</div>
+        <audio id="audioPlayer">
+            <source src="./music.mpeg" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="taskbar">
+        <button class="start">
+            <img src="./img/png-transparent-windows-95-windows-98-computer-icons-microsoft-text-rectangle-logo-thumbnail-removebg-preview.png" alt="icon" class="win95">
+            Iniciar
+        </button>
+        <div class="clock" id="clock">00:00:00</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
